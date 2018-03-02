@@ -1,0 +1,41 @@
+<%- include('./template/header') %>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+          Lizard Url Shortener
+        </div>
+        <div class="w3-display-middle">
+                
+            <div id="loading" class="sk-folding-cube hilang">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+
+            <div id="utama">
+            <h4 class="w3-jumbo w3-animate-top" style="background-color:rgba(42, 199, 173, 0.746)">Paste, Your Url Here</h4>
+
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <input class="w3-input w3-border" id="long_url" placeholder="example https://google.com" type="text">
+            
+            <button onClick="doShort()" class="w3-button w3-teal">Shrink</button>
+            </div>  
+
+            <div class="hilang" id="second">
+              <h4 class="w3-jumbo w3-animate-top" style="background-color:rgba(42, 199, 173, 0.746)">Silahkan Di Copy</h4>
+  
+              <hr class="w3-border-grey" style="margin:auto;width:40%">
+              <input class="w3-input w3-border" id="second_url" placeholder="example https://google.com" type="text">
+              
+              <button onClick="copyUrl()" class="w3-button w3-teal">Copy</button>
+              </div>  
+        </div>
+
+
+        <div class="w3-display-bottomleft w3-padding-large">
+          Design by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </div>
+      </div>
+
+<%- include('./template/footer') %>
